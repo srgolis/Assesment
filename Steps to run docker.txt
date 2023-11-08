@@ -1,0 +1,14 @@
+Build the Docker image:
+Make sure you have Docker installed. Open a terminal, navigate to the directory containing your app.py and Dockerfile, and run:
+
+
+docker build -t my-flask-api .
+
+
+Run the Docker container:
+Once the image is built, you can run the container:
+
+docker run -p 5000:5000 my-flask-api
+
+Now, your Flask app with CRUD operations is running inside a Docker container. You can access the API at http://localhost:5000.
+
